@@ -149,5 +149,81 @@ do
 
 
 
+//Ödev
+Console.WriteLine("Bakiyeniz 35000 TL'dir");
+string[] urunler = { "Bilgisayar", "Telefon", "Klavye" };
+int[] fiyatlar = { 10000, 5000, 1500 };
+int bakiye = 35000, toplamFiyat = 0;
+   
+Console.WriteLine("Alabileceğiniz ürünler ve fiyatları aşağıdaki gibidir:");
+   for (int i = 0; i < urunler.Length; i++)
+       Console.WriteLine($"{urunler[i]} : {fiyatlar[i]}");
+   
+   for (int i = 0; i < urunler.Length; i++)
+   {
+       Console.Write($"{urunler[i]} adedini giriniz: ");
+       int urunAdet = Convert.ToInt32(Console.ReadLine());
+       toplamFiyat += urunAdet * fiyatlar[i];
+   }
+   
+   if (toplamFiyat > 35000)
+       Console.WriteLine("Yetersiz Bakiye");
+   else
+   {
+       int indirimliFiyat = toplamFiyat > 30000 ? toplamFiyat * 70 / 100 :
+                            toplamFiyat > 20000 ? toplamFiyat * 80 / 100 : toplamFiyat;
+       Console.WriteLine($"İndirimli Fiyat: {indirimliFiyat}");
+       Console.WriteLine($"İndirimsiz Fiyat: {toplamFiyat}");
+   }
+
+
+/*
+Console.Write("Bakiyeniz 35000 TL'dir");
+string[] urunler = { "Bilgisayar", "Telefon", "Klavye"};
+int[] fiyatlar = { 10000, 5000, 1500 };
+int bakiye = 35000;
+int urunAdet = 0;
+int toplamFiyat = 0;
+int indirimliFiyat = 0;
+int indirimsizFiyat = 0;
+Console.WriteLine("Alabileceğiniz ürünler ve fiyatları aşağıdaki gibidir:");
+Array.ForEach(urunler, x => Console.WriteLine($"{x} : {fiyatlar[Array.IndexOf(urunler, x)]}"));
+Console.WriteLine();
+Array.ForEach(urunler, x =>
+{
+    Console.Write($"{urunler[Array.IndexOf(urunler, x)]} adedini giriniz: ");
+    urunAdet = Convert.ToInt32(Console.ReadLine());
+    toplamFiyat += urunAdet * fiyatlar[Array.IndexOf(urunler, x)];
+
+});
+if (toplamFiyat > 20000 && toplamFiyat < 30000)
+{
+    indirimliFiyat = toplamFiyat - (toplamFiyat * 20 / 100);
+    indirimsizFiyat = toplamFiyat;
+    Console.WriteLine($"İndirimli Fiyat: {indirimliFiyat}");
+    Console.WriteLine($"İndirimsiz Fiyat: {indirimsizFiyat}");
+}
+else if (toplamFiyat > 30000 && toplamFiyat < 35000)
+{
+    indirimliFiyat = toplamFiyat - (toplamFiyat * 30 / 100);
+    indirimsizFiyat = toplamFiyat;
+    Console.WriteLine($"İndirimli Fiyat: {indirimliFiyat}");
+    Console.WriteLine($"İndirimsiz Fiyat: {indirimsizFiyat}");
+}
+else if (toplamFiyat > 35000)
+{
+    Console.WriteLine("Yetersiz Bakiye");
+}
+else
+{
+    Console.WriteLine($"İndirimli Fiyat: {toplamFiyat}");
+    Console.WriteLine($"İndirimsiz Fiyat: {toplamFiyat}");
+}
+*/
+
+
+
+
+
 
  
