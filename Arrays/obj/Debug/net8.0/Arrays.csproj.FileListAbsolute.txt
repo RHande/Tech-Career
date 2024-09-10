@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/Arrays/bin/Debug/net8.0/Arrays
+/Users/hande/RiderProjects/Tech Career/Arrays/bin/Debug/net8.0/Arrays.deps.json
+/Users/hande/RiderProjects/Tech Career/Arrays/bin/Debug/net8.0/Arrays.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/Arrays/bin/Debug/net8.0/Arrays.dll
+/Users/hande/RiderProjects/Tech Career/Arrays/bin/Debug/net8.0/Arrays.pdb
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.dll
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/refint/Arrays.dll
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.pdb
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/Arrays.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/Arrays/obj/Debug/net8.0/ref/Arrays.dll

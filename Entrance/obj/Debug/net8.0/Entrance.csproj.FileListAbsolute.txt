@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/Entrance/bin/Debug/net8.0/Entrance
+/Users/hande/RiderProjects/Tech Career/Entrance/bin/Debug/net8.0/Entrance.deps.json
+/Users/hande/RiderProjects/Tech Career/Entrance/bin/Debug/net8.0/Entrance.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/Entrance/bin/Debug/net8.0/Entrance.dll
+/Users/hande/RiderProjects/Tech Career/Entrance/bin/Debug/net8.0/Entrance.pdb
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.dll
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/refint/Entrance.dll
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.pdb
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/Entrance.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/Entrance/obj/Debug/net8.0/ref/Entrance.dll
