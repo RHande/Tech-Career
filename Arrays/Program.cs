@@ -1,5 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
+using System.Diagnostics.CodeAnalysis;
+
 Console.WriteLine("Hello, World!");
 
 String[] sehirler = { "Ankara", "İstanbul", "İzmir", "Kocaeli", "Sakarya" };
@@ -220,7 +222,6 @@ else
     Console.WriteLine($"İndirimsiz Fiyat: {toplamFiyat}");
 }
 */
-
 
 
 

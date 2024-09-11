@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/Methods/bin/Debug/net8.0/Methods
+/Users/hande/RiderProjects/Tech Career/Methods/bin/Debug/net8.0/Methods.deps.json
+/Users/hande/RiderProjects/Tech Career/Methods/bin/Debug/net8.0/Methods.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/Methods/bin/Debug/net8.0/Methods.dll
+/Users/hande/RiderProjects/Tech Career/Methods/bin/Debug/net8.0/Methods.pdb
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.dll
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/refint/Methods.dll
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.pdb
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/Methods.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/Methods/obj/Debug/net8.0/ref/Methods.dll
