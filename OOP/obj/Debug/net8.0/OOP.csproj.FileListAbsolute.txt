@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/OOP/bin/Debug/net8.0/OOP
+/Users/hande/RiderProjects/Tech Career/OOP/bin/Debug/net8.0/OOP.deps.json
+/Users/hande/RiderProjects/Tech Career/OOP/bin/Debug/net8.0/OOP.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/OOP/bin/Debug/net8.0/OOP.dll
+/Users/hande/RiderProjects/Tech Career/OOP/bin/Debug/net8.0/OOP.pdb
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.dll
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/refint/OOP.dll
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.pdb
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/OOP.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/OOP/obj/Debug/net8.0/ref/OOP.dll
