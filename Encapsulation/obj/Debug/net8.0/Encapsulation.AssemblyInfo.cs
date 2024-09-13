@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Loops")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Encapsulation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6b7dcdffdc507da854adb7bc29b61f4b326d277e")]
-[assembly: System.Reflection.AssemblyProductAttribute("Loops")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Loops")]
+[assembly: System.Reflection.AssemblyProductAttribute("Encapsulation")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Encapsulation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.

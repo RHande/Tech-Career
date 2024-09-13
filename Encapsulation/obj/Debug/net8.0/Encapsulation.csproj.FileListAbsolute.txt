@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/Encapsulation/bin/Debug/net8.0/Encapsulation
+/Users/hande/RiderProjects/Tech Career/Encapsulation/bin/Debug/net8.0/Encapsulation.deps.json
+/Users/hande/RiderProjects/Tech Career/Encapsulation/bin/Debug/net8.0/Encapsulation.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/Encapsulation/bin/Debug/net8.0/Encapsulation.dll
+/Users/hande/RiderProjects/Tech Career/Encapsulation/bin/Debug/net8.0/Encapsulation.pdb
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.dll
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/refint/Encapsulation.dll
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.pdb
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/Encapsulation.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/Encapsulation/obj/Debug/net8.0/ref/Encapsulation.dll
