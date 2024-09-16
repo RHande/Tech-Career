@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/bin/Debug/net8.0/StockManagement.ConsoleUI
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/bin/Debug/net8.0/StockManagement.ConsoleUI.deps.json
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/bin/Debug/net8.0/StockManagement.ConsoleUI.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/bin/Debug/net8.0/StockManagement.ConsoleUI.dll
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/bin/Debug/net8.0/StockManagement.ConsoleUI.pdb
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.dll
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/refint/StockManagement.ConsoleUI.dll
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.pdb
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/StockManagement.ConsoleUI.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/StockManagement.ConsoleUI/obj/Debug/net8.0/ref/StockManagement.ConsoleUI.dll
