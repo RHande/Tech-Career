@@ -14,6 +14,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encapsulation", "Encapsulation\Encapsulation.csproj", "{3CDD81F3-06FA-42EE-BE07-9E4A481DB59B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Record Types", "Record Types\Record Types.csproj", "{EE5C7621-D9D1-40BE-ADCD-D5F17A8887EA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,5 +50,9 @@ Global
 		{3CDD81F3-06FA-42EE-BE07-9E4A481DB59B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CDD81F3-06FA-42EE-BE07-9E4A481DB59B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CDD81F3-06FA-42EE-BE07-9E4A481DB59B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EE5C7621-D9D1-40BE-ADCD-D5F17A8887EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EE5C7621-D9D1-40BE-ADCD-D5F17A8887EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EE5C7621-D9D1-40BE-ADCD-D5F17A8887EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EE5C7621-D9D1-40BE-ADCD-D5F17A8887EA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
