@@ -46,6 +46,8 @@ List<Category> categories = new List<Category>()
 };
 
 
+StockUpdate();
+
 void GetAllCategories()
 {
     PrintAyitac("Bütün Kategoriler: ");
@@ -116,8 +118,166 @@ void AddProductAndGetAll()
 AddProductAndGetAll();
 
 
+void TotalProductPriceSum()
+{
+    PrintAyitac("Ürünlerin Toplam Fiyatı");
+    
+    decimal total = 0;
+    foreach (Product product in products)
+    {
+        total += product.Price;
+    }
+    
+    Console.WriteLine($"Ürünlerin toplam fiyatı: {total}");
+}
+
+TotalProductPriceSum();
 
 
 
+void GetAllPriceRange(decimal min, decimal max)
+{
+    PrintAyitac("Fiyat Aralığına Göre Ürünler");
+    
+    foreach (Product product in products)
+    {
+        if (product.Price>min && product.Price<max)
+        {
+            Console.WriteLine(product);
+        }
+    }
+}
+
+GetAllPriceRange(1000, 20000);//output: Beymen Ceket, Karaca Vazo, Kervan Ayna, Adidas Futbol Topu, Delta Yoga Matı
+
+void GetPriceRangeData(out decimal min, out decimal max)
+{
+    Console.Write("Lütfen minimum fiyatı giriniz: ");
+    min = Convert.ToDecimal(Console.ReadLine());
+    
+    Console.Write("Lütfen maximum fiyatı giriniz: ");
+    max = Convert.ToDecimal(Console.ReadLine());
+}
+
+void GetAllProductsByPriceFiltered()
+{
+    decimal min;
+    decimal max;
+    GetPriceRangeData(out min, out max);
+    GetAllPriceRange(min, max);
+}
+
+GetAllProductsByPriceFiltered();
 
 
+void GetAllProductNameContains(string text)
+{
+    PrintAyitac("Ürün İsmi İçeren Ürünler");
+    foreach (Product product in products)
+    {
+        if (product.Name.Contains(text, StringComparison.InvariantCultureIgnoreCase))
+        {
+            Console.WriteLine(product);
+        }
+    }
+}
+void GetProductNameContainsData()
+{
+    Console.Write("Lütfen aramak istediğiniz ürünü yazınız: ");
+    string text = Console.ReadLine();
+    GetAllProductNameContains(text);
+}
+GetProductNameContainsData();
+
+void Delete()
+{
+    bool isPresent = false;
+    PrintAyitac("Silme İşlemi");
+    Console.Write("Lütfen silmek istediğiniz ürünün Id'sini giriniz: ");
+    int id = Convert.ToInt32(Console.ReadLine());
+    
+    foreach(Product product in products)
+    {
+        if(product.Id != id)
+        {
+            isPresent = false;
+        }else
+        {
+            isPresent = true;
+            products.Remove(product);
+            Console.WriteLine($"Id'si {id} olan ürün silindi.");
+            break;
+        }
+    }
+    
+    if (!isPresent)
+    {
+        Console.WriteLine($"Aradığınız id'ye ({id}) ait ürün bulunamadı");
+    }
+
+    foreach (Product item in products)
+    {
+        Console.WriteLine(item);
+    }
+}
+
+Delete();
+
+//Kullanıcıdan id ve stok değerlerini alınız.
+//Eğer stokta varsa, ürün kaç adet isteniyorsa o kadar satılsın
+//Kullanıcı ürünü aldıktan sonra stok miktarı güncellensin ve 0'a düşüyorsa ürün silinsin
+
+//Diyelim ki kullanıcı 50 ürün almak istiyor ama stokta 40 tane var.
+//Bu durumda "Alabileceğiniz max miktar 40" şeklinde bir uyarı verilsin.
+//Eğer stokta 0 varsa, "Üzgünüz, bu ürün stoklarımızda bulunmamaktadır" şeklinde bir uyarı verilsin.
+
+void StockUpdate()
+{
+    GetAllProducts();
+    PrintAyitac("Lütfen güncellemek istediğiniz veriyi yazınız.");
+
+    Console.Write("Lütfen ürün Id'sini giriniz: ");
+    int id = Convert.ToInt32(Console.ReadLine());
+
+    Console.Write("Lütfen almak istediğiniz ürün miktarını giriniz: ");
+    int stock = Convert.ToInt32(Console.ReadLine());
+
+    Product product = null;
+
+    foreach (Product p in products)
+    {
+        if (p.Id == id)
+        {
+            product = p;
+            break;
+        }
+    }
+
+    if (stock > product.Stock)
+    {
+        Console.WriteLine($"Alabileceğiniz max miktar {product.Stock}");
+        return;
+    }
+
+    int newStock = product.Stock - stock;
+    Product updatedProduct = new Product(product.Id, product.Name, product.Price, newStock);
+
+    if (newStock == 0)
+    {
+        products.Remove(product);
+        Console.WriteLine("Ürün stoklarımızda bulunmamaktadır.");
+        return;
+    }
+    
+    
+    string productName = product.Name;
+    int adetSayisi = stock;
+    decimal toplamFiyat = product.Price * stock;
+    Console.WriteLine($"{productName} adlı üründen {adetSayisi} adet alındı. Toplam fiyat: {toplamFiyat}");
+
+    int productIndex = products.IndexOf(product);
+    products.Remove(product);
+    products.Insert(productIndex, updatedProduct);
+  
+    GetAllProducts();
+}
