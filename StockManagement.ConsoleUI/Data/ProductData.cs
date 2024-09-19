@@ -1,3 +1,6 @@
+using System.Collections.Immutable;
+using System.Diagnostics;
+
 namespace StockManagement.ConsoleUI.Data;
 
 public class ProductData()
@@ -28,7 +31,8 @@ public class ProductData()
 
     public List<Product> GetAllPriceRange(decimal min, decimal max)
     {
-        List<Product> filteredProducts = new List<Product>();
+        //1. Yöntem:
+        /*List<Product> filteredProducts = new List<Product>();
         foreach (Product product in products)
         {
             if (product.Price >= min && product.Price <= max)
@@ -37,10 +41,16 @@ public class ProductData()
             }
         }
         return filteredProducts;
+        */
+        var filteredProducts = products.Where(p => p.Price >= min && p.Price <= max).ToList();
+        //Where metodu, şartı sağlayan elemanları getirir. Aslında bir filtreleme işlemi yapar.
+        return filteredProducts;
     }
 
     public List<Product> GetAllProductNameContains(string text)
     {
+        //1. Yöntem:
+        /*
         List<Product> containsProducts = new List<Product>();
         foreach (Product product in products)
         {
@@ -50,10 +60,20 @@ public class ProductData()
             }
         }
         return containsProducts;
+        */
+        //FindAll metodu, şartı sağlayan elemanları getirir. Aslında bir filtreleme işlemi yapar.
+        //Bu method, List sınıfında bulunan bir methoddur.
+        //Birden fazla eleman döneceği zamanlarda kullanılır.
+        var containsProducts = products.FindAll(p => p.Name.Contains(text, StringComparison.InvariantCultureIgnoreCase));
+        return containsProducts;
     }
+    //**FindAll metodu, Where metodu ile aynı işi yapar. Farklarından biri, FindAll metodu List sınıfında bulunurken, Where metodu IEnumerable sınıfında bulunur.
+    //FindAll methodu daha performanslıdır. Çünkü Where metodu, IEnumerable sınıfında bulunduğu için,IEnumerable sınıfının tüm metotlarını çalıştırır.
     
     public Product GetById(int id)
     {
+        //1. Yöntem:
+        /*
         Product? product = null;
         foreach (Product p in products)
         {
@@ -65,11 +85,35 @@ public class ProductData()
         }
         return product ?? throw new Exception("Ürün bulunamadı.");
         //return product;
+        */
+        //FirstOrDefault metodu, şartı sağlayan ilk elemanı getirir. Aslında bir filtreleme işlemi yapar.
+        //FirstOrDefault metodu, First metodu ile aynı işi yapar. Farklarından biri, First metodu eleman bulamazsa hata verirken, FirstOrDefault metodu eleman bulamazsa null döner.
+        //SingleOrDefault metodu, şartı sağlayan tek bir elemanı getirir. Aslında bir filtreleme işlemi yapar.
+        //FirstOrDefault ile SingleOrDefault arasındaki fark, FirstOrDefault metodu birden fazla eleman dönebilirken (ilk elemanı döner), SingleOrDefault metodu sadece bir eleman dönebilir ve unique bir değer arar.
+        //Elimizde tekil bir değer olacağından eminsek SingleOrDefault kullanılır.
+        Product? product = products.SingleOrDefault(p => p.Id == id);
+        return product ?? throw new Exception("Ürün bulunamadı.");
+        /*
+        Product? product = products.where(p => p.Id == id).SingleOrDefault();
+        return product ?? throw new Exception("Ürün bulunamadı.");
+        
+        Product? product = products.FirstOrDefault(p => p.Id == id);
+        return product ?? throw new Exception("Ürün bulunamadı.");
+         */
     }
 
     public Product Delete(int id)
     {
+        //1. Yöntem:
+        /*
         Product? product = GetById(id);
+        if (product is not null)
+        {
+            products.Remove(product);
+        }
+        return product;
+        */
+        Product? product = products.SingleOrDefault(p => p.Id == id);
         if (product is not null)
         {
             products.Remove(product);
@@ -81,6 +125,46 @@ public class ProductData()
     public List<Product> GetAll()
     {
         return products;
+    }
+
+    public List<Product> GetAllProductsByStockRange(int min, int max)
+    {
+        //var filteredStocks = products.Where(p => p.Stock >= min && p.Stock <= max).ToList();
+        //FindAll: List sınıfında bulunan bir methoddur. Birden fazla eleman döneceği zamanlarda kullanılır.
+        var filteredStocks = products.FindAll(p => p.Stock >= min && p.Stock <= max);
+        return filteredStocks;
+    }
+    
+    public List<Product> GetAllProductsOrderByAscendingName()
+    {
+        List<Product> orderedProducts = products.OrderBy(p => p.Name).ToList();
+        return orderedProducts;
+    }
+    
+    public List<Product> GetAllProductsOrderByDescendingName()
+    {
+        List<Product> orderedProducts = products.OrderByDescending(p => p.Name).ToList();
+        return orderedProducts;
+    }
+    
+    
+   
+   public Product GetMostExpensiveProduct() //Bu daha kullanışlı bence.
+   {
+    return products.OrderByDescending(p => p.Price).FirstOrDefault(); 
+   }//LastOrDefault metodu da kullanılabilir. Sıralamayı da ona göre yapmamız gerekir.
+   
+    //Take ile de bu şekilde yapılabilir ve o zaman list kullanmamız gerekir.
+    /* public List<Product> GetCheapestProducts()
+    {
+        List<Product> orderedProducts = products.OrderBy(p => p.Price).Take(1).ToList();
+        return orderedProducts;
+    }
+    */
+    public Product GetCheapestProduct()
+    {
+        return products.OrderBy(p => p.Price).FirstOrDefault();
+        //Ya da: return products.OrderByDescending(p => p.Price).LastOrDefault();
     }
     
 }

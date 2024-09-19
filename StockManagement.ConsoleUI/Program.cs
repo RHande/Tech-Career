@@ -284,5 +284,9 @@ using StockManagement.ConsoleUI.Service;
 // }
 
 ProductService  productService = new ProductService();
-productService.GetById(2);
-productService.GetAll();
+//productService.GetById(2);
+//productService.GetAllProductsByStockRange(100,2000);
+//productService.GetAllProductsOrderByAscendingName();
+//productService.GetAllProductsOrderByDescendingName();
+productService.GetMostExpensiveProduct();
+productService.GetCheapestProduct();
