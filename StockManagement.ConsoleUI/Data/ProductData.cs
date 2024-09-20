@@ -1,5 +1,6 @@
 using System.Collections.Immutable;
 using System.Diagnostics;
+using StockManagement.ConsoleUI.Dtos;
 
 namespace StockManagement.ConsoleUI.Data;
 
@@ -7,15 +8,24 @@ public class ProductData()
 {
     private List<Product> products = new List<Product>()//Private yazdık çünkü direkt erişim olmasın, sadece metodlarla erişilebilsin.
     {
-        new Product(1, "Beymen Ceket", 15000, 250),
-        new Product(2, "Prada Çanta", 60000, 10),
-        new Product(3, "Hk Vision Drone", 400000, 25),
-        new Product(4, "Dyson V15", 32000, 1000),
-        new Product(5, "Karaca Vazo", 500, 1000),
-        new Product(6, "Kervan Ayna", 1000, 50),
-        new Product(7, "Adidas Futbol Topu", 3000, 1254),
-        new Product(8, "Delta Yoga Matı", 2000, 531)
+        new Product(1, 1, "Beymen Ceket", 15000, 250),
+        new Product(2, 2, "Prada Çanta", 60000, 10),
+        new Product(3, 3,"Hk Vision Drone", 400000, 25),
+        new Product(4, 3,"Dyson V15", 32000, 1000),
+        new Product(5, 4,"Karaca Vazo", 500, 1000),
+        new Product(6, 4,"Kervan Ayna", 1000, 50),
+        new Product(7,5,"Adidas Futbol Topu", 3000, 1254),
+        new Product(8, 5,"Delta Yoga Matı", 2000, 531)
     };
+    
+    // List<Category> categories = new List<Category>()
+    // {
+    //     new Category(1, "Kıyafet", "Giyim ürünleri"),
+    //     new Category(2, "Aksesuar", "Kıyafet tamamlayıcıları"),
+    //     new Category(3, "Teknoloji", "Elektronik ürünler"),
+    //     new Category(4, "Ev Eşyası", "Ev dekorasyon ürünleri"),
+    //     new Category(5, "Spor Malzemeleri", "Spor yaparken kullanılan ürünler")
+    // };
     
     public Product Add(Product product)
     {
@@ -165,6 +175,36 @@ public class ProductData()
     {
         return products.OrderBy(p => p.Price).FirstOrDefault();
         //Ya da: return products.OrderByDescending(p => p.Price).LastOrDefault();
+    }
+
+
+    public List<ProductDetailDto> GetDetails(List<Category> categories)
+    {
+        List<ProductDetailDto> details =
+        products.Join(categories, p => p.CategoryId, c => c.Id, (product, category) => new ProductDetailDto(
+            Id: product.Id,
+            Name: product.Name,
+            CategoryName: category.Name,
+            Price: product.Price,
+            Stock: product.Stock
+        )).ToList();
+        return details;
+     //Join metodu, iki tabloyu birleştirir. İki tablodan da belirli bir şarta göre elemanları getirir.
+    }
+    
+    public ProductDetailDto? GetDetailById(int id, List<Category> categories)
+    {
+        var result = from p in products
+            where p.Id == id 
+            join c in categories on p.CategoryId equals c.Id
+            select new ProductDetailDto(
+                Id: p.Id,
+                Name: p.Name,
+                CategoryName: c.Name,
+                Price: p.Price,
+                Stock: p.Stock
+            );
+        return result.FirstOrDefault();
     }
     
 }

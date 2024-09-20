@@ -288,5 +288,12 @@ ProductService  productService = new ProductService();
 //productService.GetAllProductsByStockRange(100,2000);
 //productService.GetAllProductsOrderByAscendingName();
 //productService.GetAllProductsOrderByDescendingName();
-productService.GetMostExpensiveProduct();
-productService.GetCheapestProduct();
+//productService.GetMostExpensiveProduct();
+//productService.GetCheapestProduct();
+//productService.GetDetails();
+//productService.GetDetailById(2);
+
+CategoryService categoryService = new CategoryService();
+//categoryService.GetAll();
+//categoryService.GetById(2);
+//categoryService.Add(new Category(6, "Spor Ayakkabı", "Spor yaparken giyilen ayakkabılar"));

@@ -1,11 +1,13 @@
 using StockManagement.ConsoleUI.Data;
+using StockManagement.ConsoleUI.Dtos;
 
 namespace StockManagement.ConsoleUI.Service;
 
 public class ProductService
 {
     ProductData productData = new ProductData();
-
+    
+    CategoryService categoryService = new CategoryService();
     public void GetAll()
     {
         List<Product> products = productData.GetAll();
@@ -104,6 +106,26 @@ public class ProductService
     {
         Product? product = productData.GetCheapestProduct();
         Console.WriteLine($"En ucuz ürün bilgileri: {product}");
+    }
+
+    public void GetDetails()
+    {
+        List<Category> categories = categoryService.GetAllCategories();
+        List<ProductDetailDto> details = productData.GetDetails(categories);
+        details.ForEach(p => Console.WriteLine(p));
+    }
+    
+    public void GetDetailById(int id)
+    {
+        List<Category> categories = categoryService.GetAllCategories();
+        ProductDetailDto? detail = productData.GetDetailById(id, categories);
+        if (detail is null)
+        {
+            Console.WriteLine("Aradığınız Id'ye ait ürün bulunamadı.");
+            return;
+        }
+        
+        Console.WriteLine(detail);
     }
     
 }
