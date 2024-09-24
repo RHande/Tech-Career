@@ -10,12 +10,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("Methods")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("ToDoList.ConsoleUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad94752fdfba6df1d00ee7013066727df33a85da")]
-[assembly: System.Reflection.AssemblyProductAttribute("Methods")]
-[assembly: System.Reflection.AssemblyTitleAttribute("Methods")]
+[assembly: System.Reflection.AssemblyProductAttribute("ToDoList.ConsoleUI")]
+[assembly: System.Reflection.AssemblyTitleAttribute("ToDoList.ConsoleUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
