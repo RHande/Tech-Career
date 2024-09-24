@@ -20,6 +20,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StockManagement.ConsoleUI",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RentACar.ConsoleUI", "RentACar.ConsoleUI\RentACar.ConsoleUI.csproj", "{8533978D-4E63-4578-A7B7-EC2C9D59D599}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\Inheritance.csproj", "{16E804E5-9C0F-4A5F-878A-0B0EC18748C9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,5 +68,9 @@ Global
 		{8533978D-4E63-4578-A7B7-EC2C9D59D599}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8533978D-4E63-4578-A7B7-EC2C9D59D599}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8533978D-4E63-4578-A7B7-EC2C9D59D599}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16E804E5-9C0F-4A5F-878A-0B0EC18748C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16E804E5-9C0F-4A5F-878A-0B0EC18748C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16E804E5-9C0F-4A5F-878A-0B0EC18748C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16E804E5-9C0F-4A5F-878A-0B0EC18748C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
