@@ -24,6 +24,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inheritance", "Inheritance\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDoList.ConsoleUI", "ToDoList.ConsoleUI\ToDoList.ConsoleUI.csproj", "{E3F30238-21DD-4F97-8605-E16009531878}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Polymorphsym", "Polymorphsym\Polymorphsym.csproj", "{3D4F17D6-A380-4580-8189-23F026EF5590}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Company", "Company\Company.csproj", "{9B7607EE-7BC7-4769-9C07-FD2A9A2F44FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -78,5 +82,13 @@ Global
 		{E3F30238-21DD-4F97-8605-E16009531878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3F30238-21DD-4F97-8605-E16009531878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3F30238-21DD-4F97-8605-E16009531878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D4F17D6-A380-4580-8189-23F026EF5590}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D4F17D6-A380-4580-8189-23F026EF5590}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D4F17D6-A380-4580-8189-23F026EF5590}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D4F17D6-A380-4580-8189-23F026EF5590}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7607EE-7BC7-4769-9C07-FD2A9A2F44FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B7607EE-7BC7-4769-9C07-FD2A9A2F44FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B7607EE-7BC7-4769-9C07-FD2A9A2F44FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B7607EE-7BC7-4769-9C07-FD2A9A2F44FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

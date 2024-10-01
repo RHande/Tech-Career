@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/bin/Debug/net8.0/Polymorphsym
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/bin/Debug/net8.0/Polymorphsym.deps.json
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/bin/Debug/net8.0/Polymorphsym.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/bin/Debug/net8.0/Polymorphsym.dll
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/bin/Debug/net8.0/Polymorphsym.pdb
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.dll
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/refint/Polymorphsym.dll
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.pdb
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/Polymorphsym.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/Polymorphsym/obj/Debug/net8.0/ref/Polymorphsym.dll

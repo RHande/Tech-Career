@@ -1,0 +1,15 @@
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/bin/Debug/net8.0/ToDoList.ConsoleUI
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/bin/Debug/net8.0/ToDoList.ConsoleUI.deps.json
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/bin/Debug/net8.0/ToDoList.ConsoleUI.runtimeconfig.json
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/bin/Debug/net8.0/ToDoList.ConsoleUI.dll
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/bin/Debug/net8.0/ToDoList.ConsoleUI.pdb
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.AssemblyInfoInputs.cache
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.AssemblyInfo.cs
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.csproj.CoreCompileInputs.cache
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.sourcelink.json
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.dll
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/refint/ToDoList.ConsoleUI.dll
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.pdb
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ToDoList.ConsoleUI.genruntimeconfig.cache
+/Users/hande/RiderProjects/Tech Career/ToDoList.ConsoleUI/obj/Debug/net8.0/ref/ToDoList.ConsoleUI.dll

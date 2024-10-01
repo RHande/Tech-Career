@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockManagement.ConsoleUI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad94752fdfba6df1d00ee7013066727df33a85da")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+de5a17262cf0c2ff57805d80d48acddeddb45e43")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockManagement.ConsoleUI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockManagement.ConsoleUI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
