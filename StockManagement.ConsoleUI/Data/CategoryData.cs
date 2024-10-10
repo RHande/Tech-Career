@@ -3,33 +3,32 @@ using System.Diagnostics;
 
 namespace StockManagement.ConsoleUI.Data;
 
-public class CategoryData
+public sealed class CategoryData : BaseRepository, ICategoryRepository
 {
-    private List<Category> categories = new List<Category>()
-    {
-        new Category(1, "Kıyafet", "Giyim ürünleri"),
-        new Category(2, "Aksesuar", "Kıyafet tamamlayıcıları"),
-        new Category(3, "Teknoloji", "Elektronik ürünler"),
-        new Category(4, "Ev Eşyası", "Ev dekorasyon ürünleri"),
-        new Category(5, "Spor Malzemeleri", "Spor yaparken kullanılan ürünler")
-    };
-    
     public List<Category> GetAll()
     {
-        return categories;
+        return base.Categories();
     }
-    
-    public Category GetById(int id)
+
+    public Category? GetById(int id)
     {
-        Category? category = categories.SingleOrDefault(c => c.Id == id);
-        return category ?? throw new Exception("Ürün bulunamadı.");
+        throw new NotImplementedException();
     }
     
+
     public Category Add(Category category)
     {
-        categories.Add(category);
-        return category;
+        throw new NotImplementedException();
     }
-    
+
+    public Category Update(Category category)
+    {
+        throw new NotImplementedException();
+    }
+
+    public Category Delete(int id)
+    {
+        throw new NotImplementedException();
+    }
     
 }

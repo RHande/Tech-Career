@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 public record ProductDetailDto(
-        int Id,
+        Guid Id,
         string CategoryName,
         string Name,
         decimal Price,

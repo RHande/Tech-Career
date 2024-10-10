@@ -18,7 +18,7 @@ public class ProductService
         }
     }
     
-    public void GetById(int id)
+    public void GetById(Guid id)
     {
         Product? product = productData.GetById(id);
         if (product is null)
@@ -55,7 +55,7 @@ public class ProductService
         }
     }
     
-    public void Delete(int id)
+    public void Delete(Guid id)
     {
         Product? product = productData.Delete(id);
         if (product is null)
@@ -115,7 +115,7 @@ public class ProductService
         details.ForEach(p => Console.WriteLine(p));
     }
     
-    public void GetDetailById(int id)
+    public void GetDetailById(Guid id)
     {
         List<Category> categories = categoryService.GetAllCategories();
         ProductDetailDto? detail = productData.GetDetailById(id, categories);
